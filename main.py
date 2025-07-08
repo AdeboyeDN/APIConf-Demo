@@ -33,7 +33,7 @@ def get_db():
 # Routes
 @app.get("/api/health")
 def health():
-    return {"status": "ok"}
+    return {"status": "ok ok"}
 
 @app.get("/api/users")
 def get_users(db: Session = Depends(get_db)):
